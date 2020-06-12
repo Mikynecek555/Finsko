@@ -201,8 +201,8 @@ let unesco = [
             $("#mapa rect").css('fill','green');
             $(this).css('fill','blue');
             let mesto = mesta.find(item => {return item.id == id});
-            $('#info').fadeOut(1000, function() {$('#info').html(`<div class="col-12"><h2 id="mesta" class="bg-primary"> ${mesto.city} <small class="text-small">${new Intl.NumberFormat('cs-CS').format(mesto.people)} obyvatel</small></h2></div><div class="col-2"><img src="img/${mesto.sign}" class="img-fluid"></div><div class="col-10">${mesto.text}</div>`)});
-            $('#info').fadeIn(1000);
+            $('#odstavec').fadeOut(1000, function() {$('#odstavec').html(`<div class="col-12"><h2 id="mesta" class="bg-primary"> ${mesto.city} <small class="text-small">${new Intl.NumberFormat('cs-CS').format(mesto.people)} obyvatel</small></h2></div><div class="col-2"><img src="img/${mesto.sign}" class="img-fluid"></div><div class="col-10">${mesto.text}</div>`)});
+            $('#odstavec').fadeIn(1000);
         });
 
         $("#mapa rect").on('click', function(){
@@ -211,7 +211,7 @@ let unesco = [
             $("#mapa rect").css('fill','green');
             $(this).css('fill','purple');
             let pamatka = unesco.find(item => {return item.id == id});
-            $('#info').slideUp(1000, function(){$('#info').html(`<div class="col-12"><h2 id="mesta" class="bg-info">${pamatka.nazev} <small class="text-small">(Tato památka byla vytvořena v ${pamatka.vznik} a v seznamu unesco je zapsána od roku ${pamatka.unes})</small></h2></div><div class="col-4"><img src="img/${pamatka.fotka}" class="img-fluid"></div><div class="col-8"><p>${pamatka.popis}</p><p><a href="${pamatka.url}" target="_blank">Více informací: "${pamatka.url}"</a></p></div>`)});
-            $('#info').slideDown(1000);
+            $('#odstavec').slideUp(1000, function(){$('#odstavec').html(`<div class="col-12"><h2 id="mesta" class="bg-info">${pamatka.nazev} <small class="text-small">(Tato památka byla vytvořena v ${pamatka.vznik} a v seznamu unesco je zapsána od roku ${pamatka.unes})</small></h2></div><div class="col-4"><img src="img/${pamatka.fotka}" class="img-fluid"></div><div class="col-8"><p>${pamatka.popis}</p><p><a href="${pamatka.url}" target="_blank">Více informací: "${pamatka.url}"</a></p></div>`)});
+            $('#odstavec').slideDown(1000);
         });  
 });
