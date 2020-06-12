@@ -10,7 +10,7 @@ let mesta = [
         "id": "oulu",
         "city": "Oulu",
         "people": "200526",
-        "sign": "Oulu.jpg",
+        "sign": "ou.jpg",
         "text": "Oulu (švédsky Uleåborg) je největší město v severním Finsku. Leží na severovýchodním pobřeží Botnického zálivu Baltského moře při ústí řeky Oulu v provincii Severní Pohjanmaa. Se svými více než 200 000 obyvatel se po Turku a před Jyväskylä řadí mezi největší finská města."
     },
     {
@@ -59,7 +59,7 @@ let mesta = [
         "id": "tampere",
         "city": "Tampere",
         "people": "225118",
-        "sign": "tampere.jpg",
+        "sign": "tam.jpg",
         "text": "Tampere (švédsky Tammerfors) je třetím největším městem Finska a největším vnitrozemským městem v severní Evropě. Bylo založeno roku 1779. Tampere leží v západním Finsku a jeho centrum je mezi jezery Näsi a Pyhä. Patří k němu ale i poměrně rozsáhlá oblast v okolí těchto jezer. Rozkládá se na 523,42 km² a má přibližně 210 tisíc obyvatel."
     },
     {
